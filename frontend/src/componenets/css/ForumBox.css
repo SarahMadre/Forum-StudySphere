@@ -1,0 +1,87 @@
+/* .forumBox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 700px;
+}
+
+.forumBox:hover {
+  border: 1px solid rgb(175, 175, 175);
+}
+
+.forumBox__info {
+  display: flex;
+  align-items: center;
+}
+
+.forumBox__info > h5 {
+  color: rgb(129, 129, 129);
+  margin-left: 10px;
+  font-size: large;
+}
+
+.forumBox__quora > h5{
+  display: flex;
+  margin-top: 8px;
+  font-size: large;
+}
+
+.forumBox__forum{
+    display: flex;
+    font-weight: bold;
+    margin-top: 8px;
+}
+ */
+
+
+ .forumBox {
+  display: flex;
+  flex-direction: column; /* Ensure elements stack vertically */
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 700px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+.forumBox:hover {
+  border: 1px solid rgb(175, 175, 175);
+}
+
+.forumBox__info {
+  display: flex;
+  align-items: center; /* Align avatar and text */
+  margin-bottom: 10px; /* Space below the info section */
+}
+
+.forumBox__info > h5 {
+  color: rgb(129, 129, 129);
+  margin-left: 10px;
+  font-size: large;
+}
+
+.forumBox__quora > h5 {
+  margin-top: 8px;
+  font-size: large;
+}
+
+.forumBox__forum {
+  display: flex;
+  flex-direction: column; /* Stack forum texts vertically */
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.forumBox__forum > p { /* Ensure paragraphs inside the forum box have spacing */
+  margin: 4px 0; /* Space between paragraphs */
+}
+
+.forumBox__forum > p:first-child { /* Optional: style for the first paragraph */
+  color: rgb(50, 50, 50); /* Slightly darker color for emphasis */
+}
